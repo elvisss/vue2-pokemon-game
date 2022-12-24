@@ -1,6 +1,6 @@
 import pokemonApi from '../api/pokemonApi'
 
-const getRandomPokemons = () => {
+export const getRandomPokemons = () => {
   let randomPokemons = []
 
   while (randomPokemons.length < 4) {
@@ -19,7 +19,7 @@ const mapNameAndId = ({ data }) => {
   }
 }
 
-const getPokemonsNames = async () => {
+export const getPokemonsNames = async () => {
   const [a, b, c, d] = getRandomPokemons()
   const promises = []
   promises.push(pokemonApi.get(`/${a}`))

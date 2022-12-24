@@ -6,6 +6,6 @@ describe('PokemonOptions', () => {
     const wrapper = shallowMount(PokemonOptions, {
       props: { pokemons: [], blocked: true }
     })
-    expect(wrapper.find('li').exists()).not.toBe(true)
+    expect(wrapper.html()).toMatchSnapshot()
   })
 })
