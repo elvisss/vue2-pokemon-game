@@ -1,4 +1,4 @@
-import pokemonApi from '@/api/pokemonApi'
+import pokemonApi from '../api/pokemonApi'
 
 export const getRandomPokemons = () => {
   let randomPokemons = []
